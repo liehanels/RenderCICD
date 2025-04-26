@@ -24,8 +24,7 @@ afterAll(async () => {
 describe('API Endpoints', () => {
     test('POST /api/addWord should add a word', async () => {
         const response = await request(app)
-            .post('/api/addWord')
-            .send({ word: 'testword' });
+            .get('/api/addWord/testword');
         expect(response.status).toBe(200);
         expect(response.body.message).toBe('Word added successfully');
     });

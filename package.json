@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node server.mjs",
     "dev": "nodemon server.mjs",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "lint": "eslint ."
+
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,8 @@
     "@babel/preset-env": "^7.26.9",
     "babel-jest": "^29.7.0",
     "cross-env": "^7.0.3",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
     "jest": "^29.7.0",
     "mongodb-memory-server": "^10.1.4",
     "supertest": "^7.1.0"

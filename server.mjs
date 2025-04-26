@@ -7,7 +7,7 @@ import wordRoutes from './routes/Words.js';
 dotenv.config();
 
 const app = express();
-const DEFAULT_PORT = 3000;
+const PORT = 3000;
 
 // Middleware to parse JSON
 app.use(express.json());
@@ -26,7 +26,8 @@ mongoose
 app.use('/api', wordRoutes);
 
 // Start the server
-const PORT = process.env.PORT || DEFAULT_PORT;
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+export { app, server };

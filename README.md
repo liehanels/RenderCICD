@@ -142,7 +142,7 @@ export { app, server };
 ### **4. Set Environment Variables**
 Create a `.env` file:
 ```
-MONGO_URI="mongodb+srv://liehan13:P%40ssw0rd@maincluster.tbelnas.mongodb.net/?retryWrites=true&w=majority&appName=MainCluster"
+MONGO_URI="mongodb+srv://yourstuffhere"
 PORT=3001
 ```
 
